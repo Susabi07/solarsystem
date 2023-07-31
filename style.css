@@ -11,22 +11,19 @@
 */
 
 body {
-    background-image: url("./asset/background.png");
-    background-size: 1000px;
-   }
-
-#ssb_logo{
-    margin-top: 1%;
-    margin-left: 1%;
-}
-.box2{
-    display: flex;
-    font-size: 300%;
+  background-image: url("./asset/background.png");
+  background-size: 1000px;
 }
 
-.Adjust{
-    display: flex;
+#ssb_logo {
+  margin-top: 1%;
+  margin-left: 1%;
 }
+.box2 {
+  display: flex;
+  font-size: 300%;
+}
+
 /*
 #container{
     size: 50px;
@@ -54,3 +51,20 @@ body {
     padding-bottom: 10px;
 }
 */
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+    height: 100px
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
