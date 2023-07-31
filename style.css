@@ -1,0 +1,56 @@
+/*body{
+    background-image: url("/asset/background.png");
+}
+*/
+
+/*
+.bg{
+    background-image: url(./asset/mars.jpg);
+    background-size: 100% auto;
+}
+*/
+
+body {
+    background-image: url("./asset/background.png");
+    background-size: 1000px;
+   }
+
+#ssb_logo{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.box2{
+    display: flex;
+    font-size: 300%;
+}
+
+.Adjust{
+    display: flex;
+}
+/*
+#container{
+    size: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 13px;
+    font-family: Arial black;
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(66, 66, 66);
+    background: linear-gradient(rgb(31, 255, 180), #88cfdccc);
+    background: linear-gradient(-135deg, #E4A972, #9941D8);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.blue-box {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+*/
