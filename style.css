@@ -55,7 +55,6 @@ body {
   border-radius: 50%;
   display: inline-block;
   margin: auto;
-
 }
 
 header {
@@ -68,12 +67,15 @@ header img {
   height: 100px
 }
 
+/*
 footer {
   justify-content: space-between;
   position: absolute;
   bottom: 0;
   display: flex;
 }
+*/
+/*
 .url {
   color: brown;
   font-size: 200%
@@ -82,11 +84,24 @@ footer {
   color: brown;
   font-size: 200%
 }
+*/
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+footer {
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 150%;
+  color: brown;
+  /*  
+  position: absolute;
+  bottom: 0;
+  */
 }
 
