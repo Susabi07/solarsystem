@@ -1,45 +1,51 @@
-/*body{
-    background-image: url("/asset/background.png");
-}
-*/
-
-/*
-.bg{
-    background-image: url(./asset/mars.jpg);
-    background-size: 100% auto;
-}
-*/
+/* GLOBAL */
 
 body {
   background-image: url("./asset/background.png");
-  background-size: 1000px;
-}
-
-#ssb_logo {
-  margin-top: 1%;
-  margin-left: 1%;
-}
-
-.box2 {
+  padding: 0;
+  margin: 0;
   display: flex;
-  font-size: 300%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+  overflow: hidden;
 }
 
-#one_world {
-  fill: rgb(255, 0, 0);
+/* HEADER */
+
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#login {
-  fill: dimgray;
+header img {
+  height: 100px;
 }
 
-#rocket {
-  fill: dimgray;
+header svg {
+  height: 100px;
+  width: 100px;
+  fill: orange;
 }
+
+header svg:hover {
+  fill: rgb(0, 255, 85);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* PLANET */
 
 .solarSystem {
   width: 100%;
-  height: 100%;
+  height: 700px;
+  flex-grow: 2;
   transform: rotateX(75deg);
   transform-style: preserve-3d;
   display: flex;
@@ -61,7 +67,7 @@ body {
 }
 
 .path {
-  width:  800px;
+  width: 800px;
   height: 800px;
   border: solid white 10px;
   border-radius: 50%;
@@ -91,64 +97,12 @@ body {
   background-color: red;
 }
 
-.planetWrapper, .path {
+.planetWrapper,
+.path {
   animation-duration: 10s;
 }
 
-/*
-#container{
-    size: 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    font-size: 13px;
-    font-family: Arial black;
-    margin-left: 200px;
-    margin-right: 200px;
-    background-color: rgb(66, 66, 66);
-    background: linear-gradient(rgb(31, 255, 180), #88cfdccc);
-    background: linear-gradient(-135deg, #E4A972, #9941D8);
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-
-.blue-box {
-    display: flex;
-    padding-left: 20px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-*/
-
-header {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-header img {
-  height: 100px;
-}
-
-header svg {
-  height: 100px;
-  width: 100px;
-  fill: orange;
-}
-
-header svg:hover {
-  fill: rgb(0, 255, 85);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
+/* ANIMATION */
 
 @keyframes rotate {
   from {
@@ -166,4 +120,16 @@ nav ul {
   to {
     transform: rotateX(-90deg) rotateY(0deg);
   }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_right > *  {
+  margin-left: 5px;
 }
