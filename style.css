@@ -59,25 +59,54 @@ nav ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateX(-75deg);
-  width: 300px;
-  height: 300px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: black;
   box-shadow: 0 0 50px black;
 }
 
-.path {
+.pathWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.path {
+  position: relative;
   border: solid white 10px;
   border-radius: 50%;
   box-sizing: border-box;
   margin: auto;
   display: inline-block;
   line-height: 80px;
-  animation: rotate linear infinite;
   transform-style: preserve-3d;
   position: relative;
+}
+
+.path_large {
+  width: 800px;
+  height: 800px;
+  animation: rotate linear infinite;
+}
+
+.path_medium {
+  width: 500px;
+  height: 500px;
+  animation: rotate2 linear infinite;
+}
+
+.path_small {
+  width: 400px;
+  height: 400px;
+  animation: rotate linear infinite;
 }
 
 .planetWrapper {
@@ -89,12 +118,28 @@ nav ul {
   transform-style: preserve-3d;
 }
 
-.planet {
+.planet_red {
   border: solid red 10px;
   border-radius: 50%;
   width: 120px;
   height: 120px;
   background-color: red;
+}
+
+.planet_green {
+  border: solid green 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: green;
+}
+
+.planet_blue {
+  border: solid blue 10px;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background-color: blue;
 }
 
 .planetWrapper,
@@ -113,6 +158,16 @@ nav ul {
   }
 }
 
+@keyframes rotate2 {
+  from {
+    transform: rotateZ(180deg);
+  }
+  to {
+    transform: rotateZ(-180deg);
+  }
+}
+
+
 @keyframes correct {
   from {
     transform: rotateX(-90deg) rotateY(360deg);
@@ -130,6 +185,6 @@ footer {
   justify-content: space-between;
 }
 
-.footer_right > *  {
+.footer_right > * {
   margin-left: 5px;
 }
