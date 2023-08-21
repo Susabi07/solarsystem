@@ -1,7 +1,7 @@
 /* GLOBAL */
 
 body {
-  background-image: url("./asset/background.png");
+  background-image: url("./asset/background/background.png");
   padding: 0;
   margin: 0;
   display: flex;
@@ -138,14 +138,6 @@ nav ul {
   width: 120px;
   height: 120px;
   background-color: red;
-}
-
-.planet_green {
-  border: solid green 10px;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  background-color: green;
 }
 
 .planet_blue {
