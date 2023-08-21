@@ -26,11 +26,11 @@ header img {
 header svg {
   height: 100px;
   width: 100px;
-  fill: orange;
+  fill: rgb(110, 79, 62);
 }
 
 header svg:hover {
-  fill: rgb(0, 255, 85);
+  fill: rgb(123, 96, 81);
 }
 
 nav ul {
@@ -109,6 +109,12 @@ nav ul {
   animation: rotate linear infinite;
 }
 
+.path_small2 {
+  width: 40px;
+  height: 40px;
+  animation: rotate linear infinite;
+}
+
 .planetWrapper {
   position: absolute;
   top: -150px;
@@ -140,6 +146,14 @@ nav ul {
   width: 90px;
   height: 90px;
   background-color: blue;
+}
+
+.planet_yellow {
+  border: solid yellow 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
 }
 
 .planetWrapper,
