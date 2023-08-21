@@ -132,6 +132,7 @@ nav ul {
   transform-style: preserve-3d;
 }
 
+/*
 .planet_red {
   border: solid red 10px;
   border-radius: 50%;
@@ -163,7 +164,7 @@ nav ul {
   height: 20px;
   background-color: purple;
 }
-
+*/
 .planetWrapper,
 .path {
   animation-duration: 10s;
