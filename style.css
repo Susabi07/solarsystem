@@ -17,15 +17,17 @@ header {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
+  margin-left: 8px;
 }
 
 header img {
-  height: 100px;
+  height: 60px;
 }
 
 header svg {
-  height: 100px;
-  width: 100px;
+  height: 60px;
+  width: 50px;
   fill: rgb(110, 79, 62);
 }
 
@@ -115,6 +117,12 @@ nav ul {
   animation: rotate linear infinite;
 }
 
+.path_small3 {
+  width: 300px;
+  height: 300px;
+  animation: rotate linear infinite;
+}
+
 .planetWrapper {
   position: absolute;
   top: -150px;
@@ -154,6 +162,14 @@ nav ul {
   width: 20px;
   height: 20px;
   background-color: yellow;
+}
+
+.planet_purple {
+  border: solid purple 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
 }
 
 .planetWrapper,
