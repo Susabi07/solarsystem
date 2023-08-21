@@ -56,6 +56,18 @@ nav ul {
   position: relative;
 }
 
+/* .solarSystem::before {
+  content: ' ';
+  width: 900px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: darkgrey;
+  border-radius: 50%;
+  transform: rotateX(-75deg) translateZ(-360px);
+} */
+
 .sun {
   position: absolute;
   top: 50%;
@@ -93,86 +105,20 @@ nav ul {
   position: relative;
 }
 
-.path_large {
+/* Saturn */
+
+.path_saturn {
   width: 800px;
   height: 800px;
-  animation: rotate linear infinite;
+  animation: saturnRotate linear infinite;
 }
 
-.path_medium {
-  width: 500px;
-  height: 500px;
-  animation: rotate2 linear infinite;
+.planetWrapperSaturn {
+  top: -85px;
+  animation: saturnCorrect linear infinite;
 }
 
-.path_small {
-  width: 400px;
-  height: 400px;
-  animation: rotate linear infinite;
-}
-
-.path_small2 {
-  width: 40px;
-  height: 40px;
-  animation: rotate linear infinite;
-}
-
-.path_small3 {
-  width: 300px;
-  height: 300px;
-  animation: rotate linear infinite;
-}
-
-.planetWrapper {
-  position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: correct linear infinite;
-  transform-style: preserve-3d;
-}
-
-/*
-.planet_red {
-  border: solid red 10px;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  background-color: red;
-}
-
-.planet_blue {
-  border: solid blue 10px;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  background-color: blue;
-}
-
-.planet_yellow {
-  border: solid yellow 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: yellow;
-}
-
-.planet_purple {
-  border: solid purple 10px;
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: purple;
-}
-*/
-.planetWrapper,
-.path {
-  animation-duration: 10s;
-}
-
-/* ANIMATION */
-
-@keyframes rotate {
+@keyframes saturnRotate {
   from {
     transform: rotateZ(0deg);
   }
@@ -181,7 +127,29 @@ nav ul {
   }
 }
 
-@keyframes rotate2 {
+@keyframes saturnCorrect {
+  from {
+    transform: rotateX(-90deg) rotateY(360deg);
+  }
+  to {
+    transform: rotateX(-90deg) rotateY(0deg);
+  }
+}
+
+/* Jupiter */
+
+.path_jupiter {
+  width: 500px;
+  height: 500px;
+  animation: jupiterRotate linear infinite;
+}
+
+.planetWrapperJupiter {
+  top: -80px;
+  animation: jupiterCorrect linear infinite;
+}
+
+@keyframes jupiterRotate {
   from {
     transform: rotateZ(180deg);
   }
@@ -190,14 +158,118 @@ nav ul {
   }
 }
 
-
-@keyframes correct {
+@keyframes jupiterCorrect {
   from {
-    transform: rotateX(-90deg) rotateY(360deg);
+    transform: rotateX(-90deg) rotateY(180deg);
   }
   to {
-    transform: rotateX(-90deg) rotateY(0deg);
+    transform: rotateX(-90deg) rotateY(-180deg);
   }
+}
+
+/* Mars */
+
+.path_mars {
+  width: 400px;
+  height: 400px;
+  animation: marsRotate linear infinite;
+}
+
+.planetWrapperMars {
+  top: -30px;
+  animation: marsCorrect linear infinite;
+}
+
+@keyframes marsRotate {
+  from {
+    transform: rotateZ(100deg);
+  }
+  to {
+    transform: rotateZ(-260deg);
+  }
+}
+
+@keyframes marsCorrect {
+  from {
+    transform: rotateX(-90deg) rotateY(100deg);
+  }
+  to {
+    transform: rotateX(-90deg) rotateY(-260deg);
+  }
+}
+
+/* Mercury */
+
+.path_mercury {
+  width: 140px;
+  height: 140px;
+  animation: mercuryRotate linear infinite;
+}
+
+.planetWrapperMercury {
+  top: -35px;
+  animation: mercuryCorrect linear infinite;
+}
+
+@keyframes mercuryRotate {
+  from {
+    transform: rotateZ(30deg);
+  }
+  to {
+    transform: rotateZ(-330deg);
+  }
+}
+
+@keyframes mercuryCorrect {
+  from {
+    transform: rotateX(-90deg) rotateY(30deg);
+  }
+  to {
+    transform: rotateX(-90deg) rotateY(-330deg);
+  }
+}
+
+/* Earth */
+
+.path_earth {
+  width: 300px;
+  height: 300px;
+  animation: earthRotate linear infinite;
+}
+
+.planetWrapperEarth {
+  top: -30px;
+  animation: earthCorrect linear infinite;
+}
+
+@keyframes earthRotate {
+  from {
+    transform: rotateZ(200deg);
+  }
+  to {
+    transform: rotateZ(-160deg);
+  }
+}
+
+@keyframes earthCorrect {
+  from {
+    transform: rotateX(-90deg) rotateY(200deg);
+  }
+  to {
+    transform: rotateX(-90deg) rotateY(-160deg);
+  }
+}
+
+.planetWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-style: preserve-3d;
+}
+
+.planetWrapper,
+.path {
+  animation-duration: 10s;
 }
 
 /* FOOTER */
