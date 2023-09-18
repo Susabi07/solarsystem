@@ -1,14 +1,45 @@
 /* GLOBAL */
+.purpleTheme {
+  --background-color: #9131be;
+  --primary-color: #b96262;
+  --primary-color-hover: #ba5151;
+  --secondary-color: #4253a9;
+  --tertiary-color: #b96262;
+  --accent-color: #6a92e0;
+  --path-width: 3px;
+}
+
+.altTheme {
+  --background-color: #0f0e17;
+  --primary-color: #fffffe;
+  --primary-color-hover: #a7a9be;
+  --secondary-color: #f25f4c;
+  --tertiary-color: #e53170;
+  --accent-color: #0f0e17;
+  --path-width: 3px;
+}
+
+.greenTheme {
+  --background-color: #004643;
+  --primary-color: #f9bc60;
+  --primary-color-hover: #a7a9be;
+  --secondary-color: #abd1c6;
+  --tertiary-color: #e16162;
+  --accent-color: #004643;
+  --path-width: 3px;
+}
 
 body {
-  background-image: url("./asset/background/background.png");
+  /* background-image: url("./asset/background/background.png"); */
+  background-color: var(--background-color);
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   height: 100vh;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* HEADER */
@@ -26,14 +57,20 @@ header img {
   height: 100px;
 }
 
+.logo svg {
+  height: 100px;
+  width: 100px;
+  fill: var(--primary-color);
+}
+
 header svg {
   height: 60px;
   width: 50px;
-  fill: rgb(110, 79, 62);
+  fill: var(--primary-color);
 }
 
 header svg:hover {
-  fill: rgb(123, 96, 81);
+  fill: var(--primary-color-hover);
 }
 
 nav ul {
@@ -50,8 +87,6 @@ nav ul {
   justify-content: center;
   align-items: center;
   transform: scale(0.15);
-  --path-color: black;
-  --path-width: 3px;
 }
 
 @media screen and (min-width: 400px) {
@@ -89,7 +124,7 @@ nav ul {
   content: " ";
   width: 2100px;
   height: 571px;
-  background-color: grey;
+  background-color: var(--secondary-color);
   position: absolute;
   top: 8%;
   left: 50%;
@@ -111,7 +146,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths1::before {
@@ -126,7 +161,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths1::after {
@@ -141,7 +176,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths2 {
@@ -156,7 +191,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths2::before {
@@ -171,7 +206,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths2::after {
@@ -186,7 +221,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths3 {
@@ -201,7 +236,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths3::before {
@@ -216,7 +251,7 @@ nav ul {
   border-top-right-radius: 93% 92%;
   border-bottom-left-radius: 93% 92%;
   border-bottom-right-radius: 93% 92%;
-  border: solid var(--path-width) var(--path-color);
+  border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystem {
@@ -250,9 +285,17 @@ nav ul {
   transform: translate(-50%, -50%) rotateX(-75deg);
   width: 50px;
   height: 50px;
-/*  border-radius: 50%;
+  /*  border-radius: 50%;
   background-color: black;
   box-shadow: 0 0 50px black; */
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.sun img {
+  display: none;
 }
 
 .pathWrapper {
@@ -290,6 +333,14 @@ nav ul {
 .planetWrapperMercury {
   top: -35px;
   animation: mercuryCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.planetWrapperMercury img {
+  display: none;
 }
 
 @keyframes mercuryRotate {
@@ -320,6 +371,14 @@ nav ul {
 .planetWrapperVenus {
   top: -68px;
   animation: venusCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+
+.planetWrapperVenus img {
+  display: none;
 }
 
 @keyframes venusRotate {
@@ -351,6 +410,14 @@ nav ul {
 .planetWrapperEarth {
   top: -30px;
   animation: earthCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.planetWrapperEarth img {
+  display: none;
 }
 
 @keyframes earthRotate {
@@ -382,6 +449,14 @@ nav ul {
 .planetWrapperMars {
   top: -30px;
   animation: marsCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.planetWrapperMars img {
+  display: none;
 }
 
 @keyframes marsRotate {
@@ -413,6 +488,14 @@ nav ul {
 .planetWrapperJupiter {
   top: -80px;
   animation: jupiterCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.planetWrapperJupiter img {
+  display: none;
 }
 
 @keyframes jupiterRotate {
@@ -444,6 +527,14 @@ nav ul {
 .planetWrapperSaturn {
   top: -93px;
   animation: saturnCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.planetWrapperSaturn img {
+  display: none;
 }
 
 /*
@@ -480,6 +571,14 @@ img [src$="./asset/planet/saturn.png"] {
 .planetWrapperUranus {
   top: -48px;
   animation: uranusCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.planetWrapperUranus img {
+  display: none;
 }
 
 @keyframes uranusRotate {
@@ -510,6 +609,14 @@ img [src$="./asset/planet/saturn.png"] {
 .planetWrapperNeptune {
   top: -45px;
   animation: neptuneCorrect linear infinite;
+  background-color: var(--tertiary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.planetWrapperNeptune img {
+  display: none;
 }
 
 @keyframes neptuneRotate {
@@ -548,6 +655,16 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: var(--primary-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+footer #theme {
+  cursor: pointer;
 }
 
 .footer_right > * {
