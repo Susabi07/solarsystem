@@ -90,7 +90,7 @@ nav ul {
   height: 571px;
   background-color: grey;
   position: absolute;
-  top: 18%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -103,7 +103,7 @@ nav ul {
   width: 286px;
   height: 70px;
   position: absolute;
-  top: 44%;
+  top: 31%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -148,7 +148,7 @@ nav ul {
   width: 890px;
   height: 224px;
   position: absolute;
-  top: 37%;
+  top: 24%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -193,7 +193,7 @@ nav ul {
   width: 1600px;
   height: 400px;
   position: absolute;
-  top: 29%;
+  top: 16%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
