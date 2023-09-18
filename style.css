@@ -90,7 +90,7 @@ nav ul {
   height: 571px;
   background-color: grey;
   position: absolute;
-  top: 7%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -103,7 +103,7 @@ nav ul {
   width: 286px;
   height: 70px;
   position: absolute;
-  top: 30%;
+  top: 44%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -148,7 +148,7 @@ nav ul {
   width: 890px;
   height: 224px;
   position: absolute;
-  top: 22%;
+  top: 37%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -193,7 +193,7 @@ nav ul {
   width: 1600px;
   height: 400px;
   position: absolute;
-  top: 14%;
+  top: 29%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -249,9 +249,9 @@ nav ul {
   transform: translate(-50%, -50%) rotateX(-75deg);
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+/*  border-radius: 50%;
   background-color: black;
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 0 50px black; */
 }
 
 .pathWrapper {
@@ -444,6 +444,12 @@ nav ul {
   top: -93px;
   animation: saturnCorrect linear infinite;
 }
+
+/*
+img [src$="./asset/planet/saturn.png"] {
+  transform: rotateX(26.7deg) rotateZ(90deg);
+}
+*/
 
 @keyframes saturnRotate {
   from {
