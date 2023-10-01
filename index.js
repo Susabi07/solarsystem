@@ -1,4 +1,4 @@
-const theme = ['purpleTheme', 'altTheme', 'greenTheme']
+const theme = ['yellowTheme', 'purpleTheme', 'altTheme', 'greenTheme', 'blueTheme']
 
 const body = document.querySelector('body');
 
