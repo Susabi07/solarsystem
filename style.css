@@ -1,21 +1,11 @@
 /* GLOBAL */
-.yellowTheme {
-  --background-color: #ffffff;
-  --primary-color: #323256;
-  --primary-color-hover: #ffd800;
-  --secondary-color: #ffb100;
-  --tertiary-color: #ff4d23;
-  --accent-color: #27274d;
-  --path-width: 3px;
-}
-
-.purpleTheme {
-  --background-color: #9131be;
-  --primary-color: #b96262;
-  --primary-color-hover: #ba5151;
-  --secondary-color: #4253a9;
-  --tertiary-color: #b96262;
-  --accent-color: #6a92e0;
+.brownTheme {
+  --background-color: #eaddcf;
+  --primary-color: #f25042;
+  --primary-color-hover: #fffffe;
+  --secondary-color: #8c7851;
+  --tertiary-color: #020826;
+  --accent-color: #fffffe;
   --path-width: 3px;
 }
 
@@ -46,6 +36,34 @@
   --secondary-color: #d6d6d6;
   --tertiary-color: #fcf456;
   --accent-color: #27274d;
+  --path-width: 3px;
+}
+.waterTheme {
+  --background-color: #90b4ce;
+  --primary-color: #fffffe;
+  --primary-color-hover: #ef4565;
+  --secondary-color: #094067;
+  --tertiary-color: #ef4565;
+  --accent-color: #fffffe;
+  --path-width: 3px;
+}
+
+.yellowTheme {
+  --background-color: #ffffff;
+  --primary-color: #323256;
+  --primary-color-hover: #ffd800;
+  --secondary-color: #ffb100;
+  --tertiary-color: #ff4d23;
+  --accent-color: #27274d;
+  --path-width: 3px;
+}
+.pinkTheme {
+  --background-color: #fec7d7;
+  --primary-color: #a786df;
+  --primary-color-hover: #f9f8fc;
+  --secondary-color: #fffffe;
+  --tertiary-color: #153967;
+  --accent-color: #bfb7d5;
   --path-width: 3px;
 }
 
@@ -221,40 +239,40 @@ nav ul {
 }
 
 .solarSystemPaths1 {
-  width: 286px;
-  height: 70px;
+  width: 267px;
+  height: 79px;
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
   border-top-right-radius: 93% 92%;
-  border-bottom-left-radius: 93% 92%;
-  border-bottom-right-radius: 93% 92%;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
   border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths1::before {
   content: " ";
-  width: 122px;
-  height: 37px;
+  width: 157px;
+  height: 40px;
   position: absolute;
-  top: 5%;
+  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
   border-top-right-radius: 93% 92%;
-  border-bottom-left-radius: 93% 92%;
-  border-bottom-right-radius: 93% 92%;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
   border: solid var(--path-width) var(--accent-color);
 }
 
 .solarSystemPaths1::after {
   content: " ";
-  width: 391px;
-  height: 93px;
+  width: 500px;
+  height: 117px;
   position: absolute;
-  top: -23%;
+  top: -26%;
   left: 50%;
   transform: translateX(-50%);
   border-top-left-radius: 93% 92%;
@@ -375,8 +393,8 @@ nav ul {
     box-shadow: 0 0 50px black; */
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .sun img {
@@ -410,8 +428,8 @@ nav ul {
 /* Mercury */
 
 .path_mercury {
-  width: 140px;
-  height: 140px;
+  width: 95px;
+  height: 95px;
   animation: mercuryRotate linear infinite;
 }
 
@@ -420,8 +438,8 @@ nav ul {
   animation: mercuryCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 35px;
+  height: 35px;
 }
 
 .planetWrapperMercury img {
@@ -450,8 +468,8 @@ nav ul {
 
 /* Venus */
 .path_venus {
-  width: 300px;
-  height: 300px;
+  width: 170px;
+  height: 170px;
   animation: venusRotate linear infinite;
 }
 
@@ -460,8 +478,8 @@ nav ul {
   animation: venusCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .planetWrapperVenus img {
@@ -491,8 +509,8 @@ nav ul {
 /* Earth */
 
 .path_earth {
-  width: 400px;
-  height: 400px;
+  width: 490px;
+  height: 490px;
   animation: earthRotate linear infinite;
 }
 
@@ -501,8 +519,8 @@ nav ul {
   animation: earthCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 
 .planetWrapperEarth img {
@@ -542,8 +560,8 @@ nav ul {
   animation: marsCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .planetWrapperMars img {
@@ -583,8 +601,8 @@ nav ul {
   animation: jupiterCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .planetWrapperJupiter img {
@@ -624,8 +642,8 @@ nav ul {
   animation: saturnCorrect linear infinite;
   background-color: var(--tertiary-color);
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
 }
 
 .planetWrapperSaturn img {

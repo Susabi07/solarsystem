@@ -1,9 +1,12 @@
 const theme = [
-  "yellowTheme",
-  "purpleTheme",
+  "brownTheme",
   "altTheme",
+  "pinkTheme",
   "greenTheme",
   "blueTheme",
+  "waterTheme",
+  "yellowTheme",
+
 ];
 
 const body = document.querySelector("body");
