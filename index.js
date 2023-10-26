@@ -8,6 +8,14 @@ const theme = [
   "yellowTheme",
 ];
 
+const documentHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty("--height", `${window.innerHeight}px`);
+};
+
+window.addEventListener("resize", documentHeight);
+documentHeight();
+
 const body = document.querySelector("body");
 
 const themeIcon = document.querySelector("#theme");
@@ -16,7 +24,7 @@ document.querySelector("#theme").addEventListener("click", function () {
   const currentThemeIndex = theme.indexOf(body.className);
   const nextThemeIndex = (currentThemeIndex + 1) % theme.length;
   body.className = theme[nextThemeIndex];
-  setSVGToCursor()
+  setSVGToCursor();
 });
 
 const setSVGToCursor = () => {
