@@ -936,7 +936,7 @@ footer #theme {
 .item6 {
   grid-row: 3;
   grid-column: 4;
-  background-color: grey;
+  /*background-color: grey; */
 }
 
 .item7 {
@@ -948,7 +948,7 @@ footer #theme {
 .item8 {
   grid-row: 6;
   grid-column: 1;
-  background-color: lightblue;
+  /*background-color: lightblue; */
 }
 
 .item9 {
@@ -966,7 +966,6 @@ footer #theme {
 .item11{
   grid-row: 6;
   grid-column: 8;
-  background-color: yellow;
 }
 
 .item12{
