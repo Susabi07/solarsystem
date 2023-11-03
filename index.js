@@ -9,11 +9,19 @@ const theme = [
   "yellowTheme",
 ];
 
+// function isOnMainPage() {
+//   const url = new URL(window.location.href);
+//   const pathname = url.pathname;
+//   return pathname === '/' || pathname === '';
+// }
+
 // this function is for updating the height of the body
-const documentHeight = () => {
-  const doc = document.documentElement;
-  doc.style.setProperty("--height", `${window.innerHeight}px`);
-};
+// const documentHeight = () => {
+//   if(isOnMainPage){
+//   const doc = document.documentElement;
+//   doc.style.setProperty("--height", `${window.innerHeight}px`);
+//   }
+// };
 
 // We are storing document elements selected from the webpage
 const body = document.querySelector("body");
@@ -30,7 +38,7 @@ const setSVGToCursor = () => {
 
 // This listener is listening for the window resize event and then it trigers
 // the code in the documentHeight function
-window.addEventListener("resize", documentHeight);
+// window.addEventListener("resize", documentHeight);
 
 // This listerer is listening for clicks on the theme button. When the user clicks the theme button
 // we run this code

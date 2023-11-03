@@ -73,7 +73,6 @@ h6 {
   --path-width: 3px;
 }
 
-
 .altTheme {
   --background-color: #0f0e17;
   --primary-color: #fffffe;
@@ -139,12 +138,12 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
+  align-items: center;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
-  height: var(--height);
   /*place-items: center; */
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 a {
@@ -172,9 +171,9 @@ header {
   flex-direction: column;
   align-items: center;
   margin: 40px;
-  /*margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px; */
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media screen and (min-width: 600px) {
@@ -227,6 +226,7 @@ nav ul {
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 400px) {
@@ -247,50 +247,102 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .nasa_link {
+    display: flex
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .nasa_link {
+    align-items: flex-end;
+  }
 }
 
 /* PLANET */
 
 .solarSystemContainer {
   width: 100%;
-  height: 20%;
+  height: 92px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 400px) {
+  .solarSystemContainer {
+    height: 116px;
+    margin-top: 180px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .solarSystemContainer {
+    height: 172px;
+    margin-top: 160px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .solarSystemContainer {
+    height: 230px;
+    margin-top: 140px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .solarSystemContainer {
+    height: 290px;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .solarSystemContainer {
+    height: 405px;
+    margin-top: 100px;
+  }
 }
 
 .solarSystemWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(0.15) translateY(-1600px);
+  transform: scale(0.15) translateY(-2000px);
   pointer-events: none;
 }
 
 @media screen and (min-width: 400px) {
   .solarSystemWrapper {
-    transform: scale(0.2) translateY(-1200px);
+    transform: scale(0.2) translateY(-1450px);
   }
 }
 
 @media screen and (min-width: 600px) {
   .solarSystemWrapper {
-    transform: scale(0.3) translateY(-800px);
+    transform: scale(0.3) translateY(-871px);
   }
 }
 
 @media screen and (min-width: 800px) {
   .solarSystemWrapper {
-    transform: scale(0.4) translateY(-600px);
+    transform: scale(0.4) translateY(-579px);
   }
 }
 
 @media screen and (min-width: 1000px) {
   .solarSystemWrapper {
-    transform: scale(0.5) translateY(-450px);
+    transform: scale(0.5) translateY(-400px);
   }
 }
 
 @media screen and (min-width: 1500px) {
   .solarSystemWrapper {
-    transform: scale(0.7) translateY(-300px);
+    transform: scale(0.7) translateY(-200px);
   }
 }
 
@@ -843,15 +895,18 @@ nav ul {
 /* FOOTER */
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: var(--primary-color);
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   align-items: center;
 }
 
@@ -893,14 +948,11 @@ footer #theme {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(8, 100px);
-  grid-template-rows: repeat(14, 100px);
+  grid-template-rows: repeat(12, 100px);
   gap: 13px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 30px;
-  height: 100vh;
   justify-content: center;
-
 }
 
 .item1 {
@@ -993,7 +1045,6 @@ footer #theme {
   grid-row: 6;
   grid-column: 8;
 }
-
 .item25 {
   grid-row: 7;
   grid-column: 7;
