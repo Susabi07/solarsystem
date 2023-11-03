@@ -1068,6 +1068,7 @@ footer #theme {
 .item29 {
   grid-row: 8 /span 2;
   grid-column: 7 /span 2;
+  background-color: #abd1c6;
 }
 
 .item30 {
@@ -1078,6 +1079,7 @@ footer #theme {
 .item31 {
   grid-row: 10;
   grid-column: 7;
+  background-color: #abd1c6;
 }
 
 .item32 {
