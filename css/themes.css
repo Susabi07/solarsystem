@@ -1,0 +1,67 @@
+.brownTheme {
+  --background-color: #eaddcf;
+  --primary-color: #f25042;
+  --primary-color-hover: #fffffe;
+  --secondary-color: #8c7851;
+  --tertiary-color: #020826;
+  --accent-color: #fffffe;
+  --path-width: 3px;
+}
+
+.altTheme {
+  --background-color: #0f0e17;
+  --primary-color: #fffffe;
+  --primary-color-hover: #a7a9be;
+  --secondary-color: #f25f4c;
+  --tertiary-color: #e53170;
+  --accent-color: #0f0e17;
+  --path-width: 3px;
+}
+
+.greenTheme {
+  --background-color: #004643;
+  --primary-color: #f9bc60;
+  --primary-color-hover: #a7a9be;
+  --secondary-color: #abd1c6;
+  --tertiary-color: #e16162;
+  --accent-color: #004643;
+  --path-width: 3px;
+}
+
+.blueTheme {
+  --background-color: #27274d;
+  --primary-color: #f24822;
+  --primary-color-hover: #a7a9be;
+  --secondary-color: #d6d6d6;
+  --tertiary-color: #fcf456;
+  --accent-color: #27274d;
+  --path-width: 3px;
+}
+.waterTheme {
+  --background-color: #90b4ce;
+  --primary-color: #fffffe;
+  --primary-color-hover: #ef4565;
+  --secondary-color: #094067;
+  --tertiary-color: #ef4565;
+  --accent-color: #fffffe;
+  --path-width: 3px;
+}
+
+.yellowTheme {
+  --background-color: #ffffff;
+  --primary-color: #323256;
+  --primary-color-hover: #ffd800;
+  --secondary-color: #ffb100;
+  --tertiary-color: #ff4d23;
+  --accent-color: #27274d;
+  --path-width: 3px;
+}
+.pinkTheme {
+  --background-color: #fec7d7;
+  --primary-color: #a786df;
+  --primary-color-hover: #f9f8fc;
+  --secondary-color: #fffffe;
+  --tertiary-color: #153967;
+  --accent-color: #bfb7d5;
+  --path-width: 3px;
+}
