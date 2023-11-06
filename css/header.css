@@ -48,20 +48,6 @@ nav ul {
   white-space: nowrap;
 }
 
-@media screen and (min-width: 400px) {
-  .header04-list {
-    flex-direction: row;
-    gap: 40px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .header04-list {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
 .nasa_link {
   display: flex;
   flex-direction: column;
@@ -76,6 +62,10 @@ nav ul {
   nav ul {
     flex-direction: row;
   }
+  .header04-list {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -85,5 +75,9 @@ nav ul {
   }
   header {
     flex-direction: row;
+  }
+  .header04-list {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
