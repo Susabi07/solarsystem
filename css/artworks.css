@@ -136,6 +136,7 @@
   grid-row: 10;
   grid-column: 8;
 }
+*/
 
 .grid-container img {
   display: block;
@@ -143,7 +144,7 @@
   height: 100%;
   object-fit: cover;
 }
-*/
+
 
 @media screen and (min-width: 900px) {
 
