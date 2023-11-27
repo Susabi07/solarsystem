@@ -26,7 +26,6 @@
     justify-content: center;
   }
 
-<<<<<<< HEAD
   .item2{
     grid-column: 1;
     grid-row: 1;
@@ -102,9 +101,6 @@
 }
 
 @media screen and (min-width: 700px) {
-=======
-@media screen and (min-width: 500px) {
->>>>>>> a995b787947cad6ff87b561cacf2163680afb4a7
 
   .grid-container {
     display: grid;
