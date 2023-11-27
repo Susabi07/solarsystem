@@ -39,5 +39,4 @@ window.addEventListener("load", () => {
     body.className = theme;
   }
   setSVGToCursor();
-  documentHeight();
 });

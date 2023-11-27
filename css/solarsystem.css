@@ -2,7 +2,7 @@
   width: 100%;
   height: 92px;
   overflow: hidden;
-}
+} 
 
 @media screen and (min-width: 400px) {
   .solarSystemContainer {
@@ -621,4 +621,5 @@
 .planetWrapper,
 .path {
   animation-duration: 10s;
+  animation-play-state: running;
 }
