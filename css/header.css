@@ -3,7 +3,8 @@ header {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
@@ -58,6 +59,30 @@ nav ul {
   display: none;
 }
 
+@media screen and (min-width: 150px) {
+  nav ul {
+    gap: 20px;
+  }
+  nav {
+    margin: 25px;
+  }
+  .header04-list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 300px) {
+  nav ul {
+    gap: 20px;
+  }
+  nav {
+    margin: 25px;
+  }
+  .header04-list {
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 400px) {
   nav ul {
     flex-direction: row;
@@ -75,6 +100,21 @@ nav ul {
   }
   header {
     flex-direction: row;
+  }
+  .header04-list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nasa_link {
+    display: flex;
+    align-items: flex-end;
+  }
+  header {
+    flex-direction: row;
+    margin-bottom: 40px;
   }
   .header04-list {
     margin-top: 0;
