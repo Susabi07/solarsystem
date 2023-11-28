@@ -7,6 +7,7 @@
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
+  
 }
 
 .mainContentWrapper {
@@ -16,6 +17,8 @@
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 150px;
 }
 
 .mainContentWrapperItem {
@@ -33,7 +36,7 @@
 }
 
 .mainContentWrapperItemImg {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 30px;
 }
 
