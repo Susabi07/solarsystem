@@ -59,6 +59,7 @@ nav ul {
   display: none;
 }
 
+/*Mamburger Menu Header*/
 @media screen and (min-width: 150px) {
   nav ul {
     gap: 20px;
@@ -93,6 +94,7 @@ nav ul {
   }
 }
 
+/*Nomal Header*/
 @media screen and (min-width: 600px) {
   .nasa_link {
     display: flex;
@@ -119,5 +121,8 @@ nav ul {
   .header04-list {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  nav ul {
+    gap: 50px;
   }
 }
