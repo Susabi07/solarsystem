@@ -5,6 +5,7 @@ const allAnimatedElements = [
   ...animatedPlanetElements,
   ...animatedPathElements,
 ];
+const saturnToolTip = document.getElementById("saturnToolTip");
 
 let animationStatus = true;
 
@@ -15,7 +16,13 @@ const toggleAnimationStatus = () => {
   });
 };
 
-mainSolarSystem.addEventListener("mouseenter", () => {
+mainSolarSystem.addEventListener("click", (e) => {
+    if (e.target.classList.contains("planetWrapperSaturn")) {
+        saturnToolTip.style.display = "block";
+    }
+})
+
+mainSolarSystem.addEventListener("mouseover", () => {
   toggleAnimationStatus();
 });
 
