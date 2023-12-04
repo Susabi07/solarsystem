@@ -6,8 +6,19 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-button {
-  overflow: visible;
+a {
+  margin: 40px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.email{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 10;
+  /* text-decoration: underline;
+  text-decoration-color: var(--primary-color); */
+
 }
 
 button, select {
@@ -28,7 +39,7 @@ textarea {
   overflow: auto;
 }
 
-#container {
+#container_contact {
   /* border: solid 3px var(--tertiary-color); */
   max-width: 1500px;
   margin: 80px auto;
@@ -69,9 +80,12 @@ h1 {
   width: 50px;
 }
 
-.email {
-	float: right;
-	width: 45%;
+.icon2 {
+  display: block;
+  fill: var(--secondary-color);
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
 }
 
 input[type='text'], [type='email'], select, textarea {
