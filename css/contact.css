@@ -12,6 +12,7 @@ a {
   justify-content: center;
   text-align: center;
 }
+
 .email{
   width: 100%;
   font-size: 20px;
@@ -82,8 +83,8 @@ h1 {
 
 .icon2 {
   display: block;
-  fill: var(--secondary-color);
-  height: 50px;
+  stroke: var(--secondary-color);
+  height: 25px;
   margin: 0 auto;
   width: 50px;
 }
