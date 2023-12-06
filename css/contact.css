@@ -6,20 +6,30 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  margin: 40px;
+.instagram{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  stroke: var(--secondary-color);
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.instagram:hover {
+  stroke: var(--primary-color-hover);
+}
+
+.mailtoui{
+  margin-top: 60px;
+  margin-bottom: 40px;
   display: grid;
   justify-content: center;
   text-align: center;
-}
-
-.email{
-  width: 100%;
-  font-size: 20px;
+  width: auto;
+  font-size: 17px;
   font-weight: 10;
-  /* text-decoration: underline;
-  text-decoration-color: var(--primary-color); */
-
+  /* color: var(--tertiary-color); */
 }
 
 button, select {
@@ -141,10 +151,6 @@ select::-ms-expand {
 /* .subject {
   width: 100%;
 } */
-
-.email {
-  width: 100%;
-}
 
 textarea {
 	line-height: 150%;
