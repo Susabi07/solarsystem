@@ -1,23 +1,30 @@
 .eachwork_container{
   align-items: center;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
   max-width: 700px;
-  margin: 2rem auto;
-  margin-top: 80px;
 }
 
-.eachwork_container:before {
+.eachwork_info{
+  align-items: center;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 2rem;
+}
+
+
+/* .eachwork_container:before {
   content: "";
   border: 0.5px solid var(--primary-color);
   align-self: stretch;
   border-image: linear-gradient(45deg, var(--background-color), var(--primary-color), var(--background-color)) 1;
-  margin-right: 3.7em; /*説明文と写真のボーダーのスペース。目分量*/
-}
+  margin-right: 3.7em; 
+} */
 
 .leftside{
   text-align: left;
-  order: -1;
 }
 
 .tw_theme{
@@ -30,7 +37,6 @@
 
 .tw_discription{
   color: var(--primary-color);
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,8 +44,13 @@
   margin-top: 20px;
 }
 
+.tw_divider {
+  border-right: 0.5px solid var(--primary-color);
+  border-image: linear-gradient(45deg, var(--background-color), var(--primary-color), var(--background-color)) 1;
+  height: 250px;
+}
+
 .tw_picture{
-  width: 200%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,15 +65,35 @@
   content: '';
   border-bottom: 0.5px solid var(--primary-color);
   height: 3.7rem;
-  width: 100px;
-  text-align: center;
-  justify-content: center;
-  align-self: stretch;
+  width: 50%;
+}
 
+.eachwork_container2 {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+.griditem {
+  border: 0.5px solid var(--primary-color);
+  width: 100%;
+  height: 100%;
+}
+
+.artwork_image {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
 }
 
 @media screen and (min-width: 700px) {
-  .eachwork_container{
+  .eachwork_info{
     align-items: center;
     flex-direction: row;
   }
