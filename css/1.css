@@ -89,11 +89,14 @@
 }
 
 .grid_box {
-  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
-    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), var(--primary-color) calc(100% - 1px)),
+    linear-gradient(90deg, transparent calc(100% - 1px), var(--primary-color) calc(100% - 1px));
   background-size: 160px 160px;
   background-repeat: repeat;
   background-position: center center;
+  width: 100%;
+  height: 400px;
+  position: relative;
 
   /* 以下任意のスタイル */
   padding: 20px;
