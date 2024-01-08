@@ -203,13 +203,13 @@
 
   .item25 {
     grid-row: 12;
-    grid-column: 3;
+    grid-column: 3 / span 2;
   }
 
-  .item26 {
+  /* .item26 {
     grid-row: 12;
     grid-column: 4;
-  }
+  } */
 
   .item27 {
     grid-row: 13;
@@ -259,7 +259,6 @@
   .item1 {
     grid-column: 1;
     grid-row: 1;
-    /*background-color: salmon; */
   }
 
   .item2 {
@@ -348,13 +347,13 @@
   }
   .item25 {
     grid-row: 7;
-    grid-column: 7;
+    grid-column: 7 / span 2;
   }
 
-  .item26 {
+  /* .item26 {
     grid-row: 7;
     grid-column: 8;
-  }
+  } */
 
   .item27 {
     grid-row: 8;
