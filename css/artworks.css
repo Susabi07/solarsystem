@@ -36,7 +36,7 @@
 
   /* Folding shortcut: Ctrl+K Ctrl+,(cancel:,→.)*/
 
-/*Tw*/
+ /*Tw*/
   .item1 {
     grid-column: 1;
     grid-row: 1;
@@ -48,7 +48,7 @@
     grid-row: 1;
   }
 
-/*Hand*/
+ /*Hand*/
   .item5 {
     grid-column: 1;
     grid-row: 2;
@@ -60,34 +60,70 @@
     place-content: center;
   }
 
-  /*Machine*/
-  .item7 {
+ /*Machine*/
+  .item11 {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 3;
+    display: grid;
+    place-content: center;
   }
-  .item8 {
-    grid-column: 1;
-    grid-row: 2;
+  .item7 {
+    grid-column: 2;
+    grid-row: 3;
   }
 
-  .item7 {
+ /*Poster*/
+  .item10{
     grid-column: 1;
     grid-row: 4;
   }
-  .item8 {
+  .item11{
     grid-column: 2;
     grid-row: 4;
+    display: grid;
+    place-content: center;
   }
 
-  .item9 {
+ /*Test Tube*/ 
+  .item11{
     grid-column: 1;
     grid-row: 5;
+    display: grid;
+    place-content: center;
   }
-  .item10 {
+  .item22{
     grid-column: 2;
     grid-row: 5;
   }
+
+ /* Records */
+  .item30{
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .item11{
+    grid-column: 1;
+    grid-row: 5;
+    display: grid;
+    place-content: center;
+  }
+
+  /* Records */
+  .item11{
+    grid-column: 1;
+    grid-row: 6;
+    display: grid;
+    place-content: center;
+  }
+  .item29{
+    grid-column: 2;
+    grid-row: 6;
+  }
+
 }
+
+
+
 @media screen and (min-width: 500px) {
   .grid-container {
     display: grid;
