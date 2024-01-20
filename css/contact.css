@@ -10,9 +10,8 @@ html {
   display: grid;
   align-items: center;
   justify-content: center;
-  stroke: var(--secondary-color);
-  height: 50px;
-  margin: 0 auto;
+  stroke: var(--primary-color);
+  margin: 55px auto;
   width: 50px;
 }
 
@@ -29,7 +28,7 @@ html {
   width: auto;
   font-size: 17px;
   font-weight: 10;
-  /* color: var(--tertiary-color); */
+  color: var(--primary-color);
 }
 
 button, select {
@@ -53,8 +52,9 @@ textarea {
 #container_contact {
   /* border: solid 3px var(--tertiary-color); */
   max-width: 1500px;
-  margin: 80px auto;
+  margin: 38px auto;
   position: relative;
+  font-family: "Arial", "Helvetica", "sans-serif";
 }
 
 form {
@@ -63,19 +63,18 @@ form {
 }
 
 h1 {
-  color: var(--primary-color);
-  font-size: 25px;
-  font-weight: 50;
-  letter-spacing: 7px;
+  color: var(--secondary-color);
+  font-size: 15px;
+  letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .underline {
-  border-bottom: solid 2px var(--tertiary-color);
+  border-bottom: solid 0.5px var(--tertiary-color);
   margin: -0.512em auto;
   margin-top: 20px;
-  width: 350px;
+  width: 250px;
 }
 
 .icon_wrapper {
@@ -85,7 +84,7 @@ h1 {
 
 .icon {
   display: block;
-  fill: var(--secondary-color);
+  stroke: var(--secondary-color);
   height: 50px;
   margin: 0 auto;
   width: 50px;
