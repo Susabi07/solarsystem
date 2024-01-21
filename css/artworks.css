@@ -43,8 +43,8 @@
     place-content: center;
   }
   .item2 {
-    display: none;
-    /* visibility: hidden; */
+    grid-column: 2;
+    grid-row: 1;
   }
   .item3 {
     grid-column: 2;
@@ -53,14 +53,13 @@
 
   /*2 Hand*/
   .item4 {
-    display: none;
+    grid-column: 1;
+    grid-row: 2;
   }
-
   .item5 {
     grid-column: 1;
     grid-row: 2;
   }
-
   .item6 {
     grid-column: 2;
     grid-row: 2;
@@ -75,18 +74,17 @@
     display: grid;
     place-content: center;
   }
-
   .item7 {
     grid-column: 2;
     grid-row: 3;
   }
-
   .item8 {
-    display: none;
+    grid-column: 2;
+    grid-row: 3;
   }
-
   .item9 {
-    display: none;
+    grid-column: 2;
+    grid-row: 3;
   }
 
   /*4 Poster*/
@@ -101,13 +99,13 @@
     display: grid;
     place-content: center;
   }
-
   .item12 {
-    display: none;
+    grid-column: 1;
+    grid-row: 4;
   }
-
   .item21 {
-    display: none;
+    grid-column: 1;
+    grid-row: 4;
   }
 
   /*5 Test Tube*/
@@ -117,18 +115,17 @@
     display: grid;
     place-content: center;
   }
-
   .item22 {
     grid-column: 2;
     grid-row: 5;
   }
-
   .item24 {
-    display: none;
+    grid-column: 2;
+    grid-row: 5;
   }
-
   .item25 {
-    display: none;
+    grid-column: 2;
+    grid-row: 5;
   }
 
   /*6 Records */
@@ -145,7 +142,8 @@
   }
 
   .item30 {
-    display: none;
+    grid-column: 1;
+    grid-row: 6;
   }
 
   /*7 Ice */
@@ -155,7 +153,8 @@
   }
 
   .item31 {
-    display: none;
+    grid-column: 2;
+    grid-row: 7;
   }
 
   .item32 {
@@ -170,7 +169,10 @@
     grid-column: 1;
     grid-row: 8;
   }
-
+  .item33 {
+    grid-column: 1;
+    grid-row: 8;
+  }
   .item08 {
     grid-column: 2;
     grid-row: 8;
@@ -241,9 +243,11 @@
     grid-row: 3;
   }
   .item9 {
-    display: none;
+    grid-column: 3;
+    grid-row: 3;
   }
 
+ 
   /*4 Poster*/
   .item10 {
     grid-column: 1;
@@ -260,7 +264,8 @@
     place-content: center;
   }
   .item21 {
-    display: none;
+    grid-column: 2;
+    grid-row: 4;
   }
 
   /*5 Test Tube*/
@@ -282,7 +287,8 @@
   }
 
   .item25 {
-    display: none;
+    grid-column: 2;
+    grid-row: 5;
   }
 
   /*6 Records */
@@ -320,11 +326,11 @@
   }
 
   /*8 Satellite? */
-  .item26 {
+  .item33 {
     grid-column: 1;
     grid-row: 8;
   }
-  .item33 {
+    .item26 {
     grid-column: 2;
     grid-row: 8;
   }
