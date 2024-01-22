@@ -193,6 +193,10 @@
     display: grid;
     place-content: center;
   }
+  .item34 {
+    grid-column: 1;
+    grid-row: 8;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -366,7 +370,6 @@
     display: grid;
     place-content: center;
   }
-
 }
 
 /* DIDN'T TUCHED YET !!*/
@@ -524,8 +527,6 @@
     grid-row: 11;
   }
 
-  /* one more picture in ice core here! */
-
   /*8 Satellite? */
   .item26 {
     grid-column: 3 /span 2;
@@ -543,16 +544,17 @@
     display: grid;
     place-content: center;
   }
-
-  /* one more picture in satellite here! */
-
+  .item34{
+    grid-column: 4;
+    grid-row: 9;
+  }
 }
 
 @media screen and (min-width: 1100px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(8, 100px);
-    grid-template-rows: repeat(12, 100px);
+    grid-template-rows: repeat(13, 100px);
     gap: 13px;
     margin-top: 35px;
     margin-right: auto;
@@ -580,8 +582,8 @@
 
   /* Hand */
   .item4 {
-    grid-row: 1 / span 2;
     grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
   }
 
   .item5 {
@@ -590,38 +592,38 @@
   }
 
   .item6 {
-    grid-row: 3;
-    grid-column: 4;
+    grid-column: 1;
+    grid-row: 5;
     display: grid;
     place-content: center;
   }
 
   /* Machine */
   .item7 {
-    grid-row: 4;
     grid-column: 1;
+    grid-row: 4;
   }
 
   .item8 {
-    grid-row: 4;
     grid-column: 2;
+    grid-row: 4;
   }
 
   .item9 {
-    grid-row: 4 / span 2;
     grid-column: 3 / span 2;
+    grid-row: 4 / span 2;
   }
 
   .item11 {
+    grid-column: 2;
     grid-row: 5;
-    grid-column: 1;
     display: grid;
     place-content: center;
   }
 
   .item12 {
-    grid-row: 5;
     grid-column: 2;
+    grid-row: 5;
   }
 
   /* Poster */
@@ -631,66 +633,85 @@
   }
 
   .item21 {
-    grid-row: 6 / span 5;
     grid-column: 1 / span 4;
+    grid-row: 6 / span 5;
   }
 
   /* Test tube */
   .item22 {
-    grid-row: 6 / span 2;
-    grid-column: 5 / span 2;
+    grid-column: 6;
+    grid-row: 6;
   }
 
   .item23 {
+    grid-column: 5;
     grid-row: 6;
-    grid-column: 7;
     display: grid;
     place-content: center;
   }
 
   .item24 {
+    grid-column: 6;
     grid-row: 6;
-    grid-column: 8;
   }
 
   .item25 {
-    grid-row: 7;
-    grid-column: 7 / span 2;
+    grid-column: 5 /span 2;
+    grid-row: 7 /span 2;
   }
 
   /* Records */
   .item27 {
+    grid-column: 7;
     grid-row: 8;
-    grid-column: 5;
     display: grid;
     place-content: center;
   }
 
   .item28 {
+    grid-column: 8;
     grid-row: 8;
-    grid-column: 6;
   }
 
   .item30 {
-    grid-row: 9 / span 2;
-    grid-column: 5 / span 2;
+    grid-column: 7 / span 2;
+    grid-row: 6 / span 2;
   }
 
   /* Ice */
   .item29 {
-    grid-row: 8 / span 2;
-    grid-column: 7 / span 2;
+    grid-column: 5;
+    grid-row: 9;
   }
 
   .item31 {
+    grid-column: 5;
     grid-row: 10;
-    grid-column: 7;
   }
 
   .item32 {
+    grid-column: 6;
     grid-row: 10;
-    grid-column: 8;
     display: grid;
     place-content: center;
+  }
+
+  /* Satellite */
+  .item08{
+    grid-column: 8;
+    grid-row: 10;
+  }
+  .item26 {
+    grid-column: 7;
+    grid-row: 10;
+  }
+
+  .item33 {
+    grid-column: 8;
+    grid-row: 9;
+  }
+  .item34 {
+    grid-column: 7;
+    grid-row: 9;
   }
 }
