@@ -192,7 +192,7 @@
     flex-direction: row;
 
     display: flex;
-    justify-content: ;
+    justify-content: center;
   }
   .leftside{
     flex: 1;
