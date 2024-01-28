@@ -234,77 +234,78 @@
 }
 
 @media screen and (min-width: 800px) {
+
   .artwork_image {
     position: absolute;
-    top: 36.3%;
-    left: 45%;
+    top: 38.3%;
+    left: 48%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   }
-
+  
   .artwork_image2 {
     position: absolute;
-    top: 95%;
-    left: 45%;
+    top: 81.3%;
+    left: 91%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 190px;
+    width: 360px;
+    height: 270px;
   }
-
+  
   .artwork_image3 {
     position: absolute;
-    top: 38.4%;
-    left: 86%;
+    top: 81.3%;
+    left: 39.5%;
     transform: translate(-100%, -100%);
     width: 177px;
-    height: 266px;
+    height: 270px;
   }
-
+  
   .artwork_image4 {
     position: absolute;
-    top: 95%;
-    left: 87.9%;
+    top: 38.3%;
+    left: 90.3%;
     transform: translate(-100%, -100%);
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
-
+  
   .text1 {
     color: var(--primary-color);
     position: absolute;
-    top: 75%;
-    left: 45%;
+    top: 66%;
+    left: 44.5%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
   }
-
+  
   .text2 {
     color: var(--primary-color);
     position: absolute;
-    top: 75%;
-    left: 90.8%;
+    top: 110%;
+    left: 43.8%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
   }
-
+  
   .text3 {
     color: var(--primary-color);
     position: absolute;
-    top: 92%;
-    left: 90.7%;
+    top: 66%;
+    left: 87.5%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
   }
-
+  
   .text4 {
     color: var(--primary-color);
     position: absolute;
-    top: 92%;
-    left: 45%;
+    top: 110%;
+    left: 84%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;

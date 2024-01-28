@@ -1,37 +1,33 @@
 @media screen and (min-width: 300px) {
   .artwork_image {
 
-    width: 200px;
-    height: 200px;
-    /* max-width: 60%;
-    max-height: 60%; */
+    width: 250px;
+    height: 170px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
 
   .artwork_image2 {
-    width: 210px;
-    height: 160px;
-    /* max-width: 60%;
-    max-height: 60%; */
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
 
   .artwork_image3 {
-    width: 139px;
-    height: 213px;
-    /* max-width: 60%;
-    max-height: 60%; */
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
 
   .artwork_image4 {
-    width: 200px;
-    height: 200px;
-    /* max-width: 60%;
-    max-height: 60%; */
+    width: 170px;
+    height: 170px;
+    margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
@@ -80,45 +76,45 @@
 @media screen and (min-width: 600px) {
   .artwork_image {
     position: absolute;
-    top: 37%;
-    left: 46.7%;
+    top: 34%;
+    left: 49.7%;
     transform: translate(-100%, -100%);
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 210px;
   }
 
   .artwork_image2 {
     position: absolute;
-    top: 87%;
-    left: 46.7%;
+    top: 84%;
+    left: 45.5%;
     transform: translate(-100%, -100%);
     width: 210px;
-    height: 160px;
+    height: 210px;
   }
 
   .artwork_image3 {
     position: absolute;
-    top: 39%;
-    left: 85%;
+    top: 34%;
+    left: 92.5%;
     transform: translate(-100%, -100%);
-    width: 139px;
-    height: 213px;
+    width: 210px;
+    height: 210px;
   }
 
   .artwork_image4 {
     position: absolute;
-    top: 87%;
-    left: 87%;
+    top: 84%;
+    left: 87.5%;
     transform: translate(-100%, -100%);
-    width: 160px;
-    height: 160px;
+    width: 210px;
+    height: 210px;
   }
 
   .text1 {
     color: var(--primary-color);
     position: absolute;
     top: 75%;
-    left: 56%;
+    left: 48%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -128,7 +124,7 @@
     color: var(--primary-color);
     position: absolute;
     top: 75%;
-    left: 97.2%;
+    left: 95.2%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -138,7 +134,7 @@
     color: var(--primary-color);
     position: absolute;
     top: 125%;
-    left: 62%;
+    left: 48%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -148,7 +144,7 @@
     color: var(--primary-color);
     position: absolute;
     top: 125%;
-    left: 99%;
+    left: 90%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -158,45 +154,45 @@
 @media screen and (min-width: 700px) {
   .artwork_image {
     position: absolute;
-    top: 37%;
-    left: 46.7%;
+    top: 34%;
+    left: 49.7%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 210px;
   }
 
   .artwork_image2 {
     position: absolute;
-    top: 87%;
-    left: 46.7%;
+    top: 82%;
+    left: 45.5%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 190px;
+    width: 210px;
+    height: 210px;
   }
 
   .artwork_image3 {
     position: absolute;
-    top: 39%;
-    left: 85%;
+    top: 34%;
+    left: 86.5%;
     transform: translate(-100%, -100%);
-    width: 177px;
-    height: 266px;
+    width: 210px;
+    height: 210px;
   }
 
   .artwork_image4 {
     position: absolute;
-    top: 88.2%;
-    left: 86%;
+    top: 82%;
+    left: 84.5%;
     transform: translate(-100%, -100%);
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
   }
 
   .text1 {
     color: var(--primary-color);
     position: absolute;
-    top: 76%;
-    left: 54%;
+    top: 70%;
+    left: 48%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -205,8 +201,8 @@
   .text2 {
     color: var(--primary-color);
     position: absolute;
-    top: 76%;
-    left: 94%;
+    top: 70%;
+    left: 89.2%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -215,8 +211,8 @@
   .text3 {
     color: var(--primary-color);
     position: absolute;
-    top: 122%;
-    left: 59%;
+    top: 118%;
+    left: 48.5%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -225,8 +221,8 @@
   .text4 {
     color: var(--primary-color);
     position: absolute;
-    top: 122%;
-    left: 95%;
+    top: 118%;
+    left: 89%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -236,45 +232,45 @@
 @media screen and (min-width: 800px) {
   .artwork_image {
     position: absolute;
-    top: 36.3%;
-    left: 45%;
+    top: 34.3%;
+    left: 48%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 275px;
   }
 
   .artwork_image2 {
     position: absolute;
-    top: 95%;
-    left: 45%;
+    top: 81.8%;
+    left: 44%;
     transform: translate(-100%, -100%);
-    width: 250px;
-    height: 190px;
+    width: 275px;
+    height: 275px;
   }
 
   .artwork_image3 {
     position: absolute;
-    top: 38.4%;
-    left: 86%;
+    top: 34.3%;
+    left: 95.5%;
     transform: translate(-100%, -100%);
-    width: 177px;
-    height: 266px;
+    width: 275px;
+    height: 275px;
   }
 
   .artwork_image4 {
     position: absolute;
-    top: 95%;
-    left: 87.9%;
+    top: 81.8%;
+    left: 90.3%;
     transform: translate(-100%, -100%);
-    width: 200px;
-    height: 200px;
+    width: 275px;
+    height: 275px;
   }
 
   .text1 {
     color: var(--primary-color);
     position: absolute;
-    top: 75%;
-    left: 45%;
+    top: 64%;
+    left: 41%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -283,8 +279,8 @@
   .text2 {
     color: var(--primary-color);
     position: absolute;
-    top: 75%;
-    left: 90.8%;
+    top: 64%;
+    left: 93.8%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -293,8 +289,8 @@
   .text3 {
     color: var(--primary-color);
     position: absolute;
-    top: 92%;
-    left: 90.7%;
+    top: 112%;
+    left: 42.5%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
@@ -303,8 +299,8 @@
   .text4 {
     color: var(--primary-color);
     position: absolute;
-    top: 92%;
-    left: 45%;
+    top: 112%;
+    left: 88%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;

@@ -11,8 +11,6 @@
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    /* margin-right: 20px;
-      margin-left: 20px; */
   }
 
   /* eachwork_info */
@@ -25,7 +23,6 @@
   }
 
   .leftside {
-
     text-align: center;
     margin-right: 40px;
     margin-left: 40px;
@@ -108,7 +105,6 @@
     margin-top: 55px;
     margin-bottom: 130px;
   }
-
 }
 
 @media screen and (min-width: 600px) {
@@ -117,8 +113,6 @@
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    /* margin-right: 20px;
-      margin-left: 20px; */
   }
 
   /* eachwork_info */
@@ -164,8 +158,8 @@
   .tw_picture {
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
   }
 
   .border {
@@ -214,7 +208,6 @@
     margin-top: 55px;
     margin-bottom: 130px;
   }
-
 }
 
 @media screen and (min-width: 700px) {
@@ -223,8 +216,6 @@
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    /* margin-right: 20px;
-      margin-left: 20px; */
   }
 
   /* eachwork_info */
@@ -274,14 +265,6 @@
     margin-left: 120px;
   }
 
-  /* eachwork_info2 */
-  /* .eachwork_info2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
-
   .border {
     content: "";
     border-bottom: 0.5px solid var(--primary-color);
@@ -306,7 +289,6 @@
     height: 100% !important;
   }
 
-
   .video_description {
     color: var(--primary-color);
     font-weight: lighter;
@@ -329,9 +311,6 @@
     margin-top: 55px;
     margin-bottom: 130px;
   }
-
-
-
 }
 
 @media screen and (min-width: 800px) {
@@ -386,14 +365,6 @@
     margin: 50px;
   }
 
-  /* eachwork_info2 */
-  .eachwork_info2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .border {
     content: "";
     border-bottom: 0.5px solid var(--primary-color);
@@ -433,12 +404,11 @@
     background-repeat: repeat;
     background-position: center center;
     width: 99%;
-    height: 800px;
+    height: 1000px;
     position: relative;
     margin-top: 55px;
     margin-bottom: 130px;
   }
-
 
   .griditem {
     border: 0.5px solid var(--primary-color);
