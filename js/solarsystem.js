@@ -17,10 +17,18 @@ const toggleAnimationStatus = () => {
 };
 
 mainSolarSystem.addEventListener("click", (e) => {
-    if (e.target.classList.contains("planetWrapperSaturn")) {
-        saturnToolTip.style.display = "block";
+  if (e.target.classList.contains("planetWrapperSaturn")) {
+
+    const isTooltipVisible = saturnToolTip.style.display === "block";
+
+    if (isTooltipVisible) {
+      saturnToolTip.style.display = "none";
+    } else {
+      saturnToolTip.style.display = "block";
     }
-})
+
+  }
+});
 
 mainSolarSystem.addEventListener("mouseover", () => {
   toggleAnimationStatus();
