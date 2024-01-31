@@ -4,7 +4,7 @@
   font-weight: bold;
   padding-left: 40px;
   padding-right: 40px;
-  text-align: center; 
+  text-align: center;
 }
 
 .mainContentWrapper {
@@ -33,12 +33,16 @@
 } */
 
 .mainContentWrapperItemImg {
-  padding: 80px;
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 350px) {
   .mainContentWrapperItemImg {
-    padding: 30px;
+    width: 80%;
+    height: 80%;
   }
   .mainContentWrapperItem {
     width: 35%;
