@@ -175,6 +175,10 @@
     display: grid;
     place-content: center;
   }
+  .item35 {
+    grid-column: 2;
+    grid-row: 7;
+  }
 
   /*8 Satellite? */
   .item26 {
@@ -197,6 +201,7 @@
     grid-column: 1;
     grid-row: 8;
   }
+
 }
 
 @media screen and (min-width: 500px) {
@@ -350,6 +355,10 @@
 
   .item31 {
     grid-column: 3;
+    grid-row: 7;
+  }
+  .item35 {
+    grid-column: 2;
     grid-row: 7;
   }
 
@@ -526,6 +535,10 @@
     grid-column: 2;
     grid-row: 11;
   }
+  .item35 {
+    grid-column: 2;
+    grid-row: 11;
+  }
 
   /*8 Satellite? */
   .item26 {
@@ -694,6 +707,10 @@
     grid-row: 10;
     display: grid;
     place-content: center;
+  }
+  .item35 {
+    grid-column: 6;
+    grid-row: 9;
   }
 
   /* Satellite */
