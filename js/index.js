@@ -1,12 +1,12 @@
 // this is our array of themes. It should correspond to our css theme classes.
 const theme = [
   "brownTheme",
+  "waterTheme",
+  "yellowTheme",
   "altTheme",
   "pinkTheme",
   "greenTheme",
   "blueTheme",
-  "waterTheme",
-  "yellowTheme",
 ];
 
 // We are storing document elements selected from the webpage
