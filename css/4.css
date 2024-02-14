@@ -237,9 +237,9 @@
   .artwork_image {
     position: absolute;
     top: 36.3%;
-    left: 45%;
+    left: 50%;
     transform: translate(-100%, -100%);
-    width: 250px;
+    width: 340px;
     height: 250px;
   }
 
@@ -249,15 +249,15 @@
     left: 45%;
     transform: translate(-100%, -100%);
     width: 250px;
-    height: 190px;
+    height: 333px;
   }
 
   .artwork_image3 {
     position: absolute;
     top: 38.4%;
-    left: 86%;
+    left: 87%;
     transform: translate(-100%, -100%);
-    width: 177px;
+    width: 200px;
     height: 266px;
   }
 
@@ -293,8 +293,8 @@
   .text3 {
     color: var(--primary-color);
     position: absolute;
-    top: 92%;
-    left: 90.7%;
+    top: 115%;
+    left: 73%;
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
