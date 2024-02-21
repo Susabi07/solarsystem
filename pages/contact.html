@@ -17,6 +17,9 @@
     let currentTheme = localStorage.getItem("theme");
     if (currentTheme) {
       html.className = currentTheme;
+    } else {
+      localStorage.setItem("theme", "brownTheme");
+      html.className = "brownTheme";
     }
   </script>
   <script type="text/javascript" src="../js/contact.js" defer></script>
