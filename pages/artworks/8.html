@@ -12,7 +12,13 @@
   <link rel="stylesheet" type="text/css" href="../../css/footer.css" />
   <link rel="stylesheet" type="text/css" href="../../css/artworks_pages.css" />
   <link rel="stylesheet" type="text/css" href="../../css/8.css" />
-
+  <script>
+    let html = document.querySelector("html");
+    let currentTheme = localStorage.getItem("theme");
+    if (currentTheme) {
+      html.className = currentTheme;
+    }
+  </script>
   <script type="text/javascript" src="../../js/index.js" defer></script>
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -20,7 +26,7 @@
   <link rel="icon" type="image/png" href="../../favicon.ico" sizes="192x192">
 </head>
 
-<body class="brownTheme">
+<body>
   <header>
     <a href="../../index.html" title="logo link" class="logo">
       <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -117,6 +123,9 @@ z" />
             our CanSat (Small Satellite) equipped with a camera was
             dropped from a drone, and when it fell, it performed a mission
             to take video images.
+
+            <br><br>
+            Project team member: Keiko iioka, Kaede Kikuchi, Suzuka Hayashi, Seiji Hasumi.
           </div>
         </div>
 
