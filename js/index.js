@@ -7,6 +7,7 @@ const theme = [
   "pinkTheme",
   "greenTheme",
   "blueTheme",
+  "saturnTheme",
 ];
 
 // We are storing document elements selected from the webpage

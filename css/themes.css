@@ -65,3 +65,12 @@
   --accent-color: #bfb7d5;
   --path-width: 3px;
 }
+.saturnTheme {
+  --background-color: #B5C0D0;
+  --primary-color: #B67352;
+  --primary-color-hover: #fac171;
+  --secondary-color: #747264;
+  --tertiary-color: #E0CCBE;
+  --accent-color: #E0CCBE;
+  --path-width: 3px;
+}
