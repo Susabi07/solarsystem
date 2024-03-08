@@ -152,6 +152,7 @@
     color: var(--primary-color);
     justify-content: center;
     margin-top: 20px;
+    /* margin-right: 50px; */
   }
 
   .tw_divider {
