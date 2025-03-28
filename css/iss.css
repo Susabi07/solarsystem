@@ -1,0 +1,315 @@
+/*1のTumbleweedのcssをそのままコピペで使ってます*/
+
+@media screen and (min-width: 300px) {
+  .artwork_image {
+
+    width: 200px;
+    height: 200px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artwork_image2 {
+    width: 210px;
+    height: 160px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artwork_image3 {
+    width: 139px;
+    height: 213px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artwork_image4 {
+    width: 200px;
+    height: 200px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text1 {
+    color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text2 {
+    color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text3 {
+    color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text4 {
+    color: var(--primary-color);
+    width: 200px;
+    height: 50px;
+    /* max-width: 60%;
+    max-height: 60%; */
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .artwork_image {
+    position: absolute;
+    top: 37%;
+    left: 46.7%;
+    transform: translate(-100%, -100%);
+    width: 200px;
+    height: 200px;
+  }
+
+  .artwork_image2 {
+    position: absolute;
+    top: 87%;
+    left: 46.7%;
+    transform: translate(-100%, -100%);
+    width: 210px;
+    height: 160px;
+  }
+
+  .artwork_image3 {
+    position: absolute;
+    top: 39%;
+    left: 85%;
+    transform: translate(-100%, -100%);
+    width: 139px;
+    height: 213px;
+  }
+
+  .artwork_image4 {
+    position: absolute;
+    top: 87%;
+    left: 87%;
+    transform: translate(-100%, -100%);
+    width: 160px;
+    height: 160px;
+  }
+
+  .text1 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 75%;
+    left: 56%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text2 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 75%;
+    left: 97.2%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text3 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 125%;
+    left: 62%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text4 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 125%;
+    left: 99%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .artwork_image {
+    position: absolute;
+    top: 37%;
+    left: 46.7%;
+    transform: translate(-100%, -100%);
+    width: 250px;
+    height: 250px;
+  }
+
+  .artwork_image2 {
+    position: absolute;
+    top: 87%;
+    left: 46.7%;
+    transform: translate(-100%, -100%);
+    width: 250px;
+    height: 190px;
+  }
+
+  .artwork_image3 {
+    position: absolute;
+    top: 39%;
+    left: 85%;
+    transform: translate(-100%, -100%);
+    width: 177px;
+    height: 266px;
+  }
+
+  .artwork_image4 {
+    position: absolute;
+    top: 88.2%;
+    left: 86%;
+    transform: translate(-100%, -100%);
+    width: 200px;
+    height: 200px;
+  }
+
+  .text1 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 76%;
+    left: 54%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text2 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 76%;
+    left: 94%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text3 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 122%;
+    left: 59%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+
+  .text4 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 122%;
+    left: 95%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  .artwork_image {
+    position: absolute;
+    top: 38.3%;
+    left: 48%;
+    transform: translate(-100%, -100%);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .artwork_image2 {
+    position: absolute;
+    top: 81.3%;
+    left: 91%;
+    transform: translate(-100%, -100%);
+    width: 360px;
+    height: 270px;
+  }
+  
+  .artwork_image3 {
+    position: absolute;
+    top: 81.3%;
+    left: 39.5%;
+    transform: translate(-100%, -100%);
+    width: 177px;
+    height: 270px;
+  }
+  
+  .artwork_image4 {
+    position: absolute;
+    top: 38.3%;
+    left: 90.3%;
+    transform: translate(-100%, -100%);
+    width: 300px;
+    height: 300px;
+  }
+  
+  .text1 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 66%;
+    left: 44.5%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+  
+  .text2 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 110%;
+    left: 43.8%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+  
+  .text3 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 66%;
+    left: 87.5%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+  
+  .text4 {
+    color: var(--primary-color);
+    position: absolute;
+    top: 110%;
+    left: 84%;
+    transform: translate(-100%, -100%);
+    width: 240px;
+    height: 240px;
+  }
+}

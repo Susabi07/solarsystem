@@ -1,7 +1,40 @@
+.kayokolang {
+  color: var(--secondary-color);
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.roles {
+  color: var(--secondary-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.selfintro {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .about_me {
   color: var(--secondary-color);
   font-size: 25px;
   font-weight: bold;
+  margin-top: 25px;
   margin-bottom: 25px;
   padding-left: 40px;
   padding-right: 40px;
