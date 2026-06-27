@@ -1,4 +1,9 @@
 /*1のTumbleweedのcssをそのままコピペで使ってます*/
+.logo_dino {
+  color: var(--secondary-color);
+  height: 50%;
+  width: 50%;
+}
 
 @media screen and (min-width: 300px) {
   .artwork_image {
@@ -78,11 +83,7 @@
     justify-content: center;
   }
 
-  .logo_dino {
-    color: var(--secondary-color);
-    height: 100px;
-    width: 100px;
-  }
+
 }
 
 @media screen and (min-width: 600px) {
@@ -160,12 +161,6 @@
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
-  }
-
-  .logo_dino {
-    color: var(--secondary-color);
-    height: 100px;
-    width: 100px;
   }
 }
 
@@ -246,11 +241,6 @@
     height: 240px;
   }
 
-  .logo_dino {
-    color: var(--secondary-color);
-    height: 100px;
-    width: 100px;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -329,11 +319,5 @@
     transform: translate(-100%, -100%);
     width: 240px;
     height: 240px;
-  }
-
-  .logo_dino {
-    color: var(--secondary-color);
-    height: 130px;
-    width: 130px;
   }
 }

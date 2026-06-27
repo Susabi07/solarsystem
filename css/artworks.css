@@ -1,871 +1,532 @@
-.grid-container {
-  display: flex;
-  gap: 13px;
-  width: 80%;
-  flex-direction: column;
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
-}
+/* Folding shortcut: Ctrl+K Ctrl+,(cancel:,→.)*/
 
-.grid-container img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  /*300px以下の部分*/
+  .bartext{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
 
-.icon {
-  stroke: var(--primary-color);
-  /* margin: 50px;
-  padding: 5px; */
-  /* cursor: pointer; */
-}
-
-@media screen and (min-width:350px) {
-  .grid-container {
+  .post_container {
     display: grid;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(10, 150px);
-    gap: 13px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 1px;          /* 線の太さ */
+    background: var(--primary-color);  /* 線の色 */
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .post_list {
+    width: 45vw;
+    height: 45vw;
+    box-sizing: border-box;
+    /* border: 0.5px solid var(--primary-color); */
+
+    aspect-ratio: 1/1;
+    background: var(--background-color);
+  }
+
+  .post_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /*リンクの下線を消す*/
+    color: inherit; /*リンクの色を親と同じにする*/
+  }
+
+  .post_article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    display: flex;
+    font-size: 1.0rem;                      /*元々3.2rem*/
     justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
-  /* Folding shortcut: Ctrl+K Ctrl+,(cancel:,→.)*/
-  /*1 Tw*/
-  .item1 {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    place-content: center;
+  .text_year {
+    font-size: 1.5rem; 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--secondary-color);
   }
 
-  .item2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .item3 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  /*2 Hand*/
-  .bookicon {
-    grid-column: 2;
-    grid-row: 2;
-    display: grid;
-    place-content: center;
-  }
-
-  .item4 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .item5 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-
-  /*3 Machine*/
-  .item6 {
-    grid-column: 1;
-    grid-row: 3;
-    display: grid;
-    place-content: center;
-  }
-
-  .item7 {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .item8 {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .item9 {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  /*4 Poster*/
-  .item10 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .item11 {
-    grid-column: 2;
-    grid-row: 4;
-    display: grid;
-    place-content: center;
-  }
-
-  .item12 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .item102 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .item103 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .item105 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-
-  /*5 Test Tube*/
-  .item23 {
-    grid-column: 1;
-    grid-row: 5;
-    display: grid;
-    place-content: center;
-  }
-
-  .item22 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .item24 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .item25 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  /*6 Records */
-  .item27 {
-    grid-column: 2;
-    grid-row: 6;
-    display: grid;
-    place-content: center;
-  }
-
-  .item28 {
-    grid-column: 1;
-    grid-row: 6;
-  }
-
-  .item30 {
-    grid-column: 1;
-    grid-row: 6;
-  }
-
-  /*7 Ice */
-  .item29 {
-    grid-column: 2;
-    grid-row: 7;
-  }
-
-  .item31 {
-    grid-column: 2;
-    grid-row: 7;
-  }
-
-  .item32 {
-    grid-column: 1;
-    grid-row: 7;
-    display: grid;
-    place-content: center;
-  }
-
-  .item35 {
-    grid-column: 2;
-    grid-row: 7;
-  }
-
-  /*8 Satellite? */
-  .item26 {
-    grid-column: 1;
-    grid-row: 8;
-  }
-
-  .item33 {
-    grid-column: 1;
-    grid-row: 8;
-  }
-
-  .item08 {
-    grid-column: 2;
-    grid-row: 8;
-    display: grid;
-    place-content: center;
-  }
-
-  .item34 {
-    grid-column: 1;
-    grid-row: 8;
-  }
-
-
-  /* Dilatancy */
-  .item21 {
-    grid-column: 2;
-    grid-row: 9;
-  }
-
-  .item104 {
-    grid-column: 1;
-    grid-row: 9;
-    display: grid;
-    place-content: center;
-  }
-
-  .dilatancy2 {
-    grid-column: 2;
-    grid-row: 9;
-  }
-
-  .dilatancy3 {
-    grid-column: 2;
-    grid-row: 9;
-  }
-}
-
-@media screen and (min-width: 500px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 130px);
-    grid-template-rows: repeat(10, 130px);
-    gap: 13px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-  }
-
-  /*1 Tw*/
-  .item1 {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    place-content: center;
-  }
-
-  .item2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .item3 {
-    grid-column: 3;
-    grid-row: 1;
-  }
-
-  /*2 Hand*/
-  .item4 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-
-  .item5 {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .item6 {
-    grid-column: 3;
-    grid-row: 2;
-    display: grid;
-    place-content: center;
-  }
-
-  /*3 Machine*/
-  .bookicon {
-    grid-column: 1;
-    grid-row: 3;
-    display: grid;
-    place-content: center;
-  }
-
-  .item7 {
-    grid-column: 2;
-    grid-row: 3;
-  }
-
-  .item8 {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .item9 {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-
-  /*4 Poster*/
-  .item10 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-
-  .item12 {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .item11 {
-    grid-column: 3;
-    grid-row: 4;
-    display: grid;
-    place-content: center;
-  }
-
-  .item102 {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .item103 {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .item105 {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  /*5 Test Tube*/
-  .item23 {
-    grid-column: 1;
-    grid-row: 5;
-    display: grid;
-    place-content: center;
-  }
-
-  .item22 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .item24 {
-    grid-column: 3;
-    grid-row: 5;
-  }
-
-  .item25 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  /*6 Records */
-  .item28 {
-    grid-column: 1;
-    grid-row: 6;
-  }
-
-  .item30 {
-    grid-column: 2;
-    grid-row: 6;
-  }
-
-  .item27 {
-    grid-column: 3;
-    grid-row: 6;
-    display: grid;
-    place-content: center;
-  }
-
-  /*7 Ice */
-  .item32 {
-    grid-column: 1;
-    grid-row: 7;
-    display: grid;
-    place-content: center;
-  }
-
-  .item29 {
-    grid-column: 2;
-    grid-row: 7;
-  }
-
-  .item31 {
-    grid-column: 3;
-    grid-row: 7;
-  }
-
-  .item35 {
-    grid-column: 2;
-    grid-row: 7;
-  }
-
-  /*8 Satellite? */
-  .item33 {
-    grid-column: 1;
-    grid-row: 8;
-  }
-
-  .item26 {
-    grid-column: 2;
-    grid-row: 8;
-  }
-
-  .item08 {
-    grid-column: 3;
-    grid-row: 8;
-    display: grid;
-    place-content: center;
-  }
+  .post_article_img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;  /*元々2.2, 4*/
+    box-sizing: border-box;
 
-  /* Dilatancy */
-  .item21 {
-    grid-column: 2;
-    grid-row: 9;
-  }
-
-  .dilatancy2 {
-    grid-column: 3;
-    grid-row: 9;
-  }
-
-  .dilatancy3 {
-    grid-column: 3;
-    grid-row: 9;
-  }
-}
-
-@media screen and (min-width: 700px) {
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 130px);
-    grid-template-rows: repeat(13, 130px);
-    gap: 13px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-  }
-
-  /*1 Tw*/
-  .item1 {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    place-content: center;
-  }
-
-  .item2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .item3 {
-    grid-column: 3 /span 2;
-    grid-row: 1 /span 2;
-  }
-
-  /*2 Hand*/
-  .item4 {
-    grid-column: 1 /span 2;
-    grid-row: 2 /span 2;
-  }
-
-  .item5 {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .bookicon {
-    grid-column: 4;
-    grid-row: 3;
-    display: grid;
-    place-content: center;
-  }
-
-  /*3 Machine*/
-  .item6 {
-    grid-column: 1;
-    grid-row: 4;
-    display: grid;
-    place-content: center;
-  }
-
-  .item7 {
-    grid-column: 2;
-    grid-row: 4;
-  }
-
-  .item8 {
-    grid-column: 3;
-    grid-row: 4;
-  }
-
-  .item9 {
-    grid-column: 4;
-    grid-row: 4;
-  }
-
-  /*4 Poster*/
-  .item10 {
-    grid-column: 3 /span 2;
-    grid-row: 5 /span 2;
-  }
-
-  .item12 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .item11 {
-    grid-column: 2;
-    grid-row: 6;
-    display: grid;
-    place-content: center;
-  }
-
-  .item102 {
-    grid-column: 1;
-    grid-row: 5;
-  }
-
-  .item103 {
-    grid-column: 1;
-    grid-row: 6;
-  }
-
-  .item105 {
-    grid-column: 1;
-    grid-row: 6;
-  }
-
-  /*5 Test Tube*/
-  .item23 {
-    grid-column: 3;
-    grid-row: 7;
-    display: grid;
-    place-content: center;
-  }
-
-  .item22 {
-    grid-column: 4;
-    grid-row: 7;
-  }
-
-  .item24 {
-    grid-column: 4;
-    grid-row: 7;
-  }
-
-  .item25 {
-    grid-column: 1 /span 2;
-    grid-row: 7 /span 2;
-  }
-
-  /*6 Records */
-  .item28 {
-    grid-column: 3;
-    grid-row: 8;
-  }
-
-  .item30 {
-    grid-column: 4;
-    grid-row: 7;
-  }
-
-  .item27 {
-    grid-column: 4;
-    grid-row: 8;
-    display: grid;
-    place-content: center;
-  }
-
-  /*7 Ice */
-  .item32 {
-    grid-column: 1;
-    grid-row: 11;
-    display: grid;
-    place-content: center;
-  }
-
-  .item29 {
-    grid-column: 1 /span 2;
-    grid-row: 9 /span 2;
-  }
-
-  .item31 {
-    grid-column: 2;
-    grid-row: 11;
-  }
-
-  .item35 {
-    grid-column: 2;
-    grid-row: 11;
-  }
-
-  /*8 Satellite? */
-  .item26 {
-    grid-column: 3 /span 2;
-    grid-row: 10 /span 2;
-  }
-
-  .item33 {
-    grid-column: 4;
-    grid-row: 9;
-  }
-
-  .item08 {
-    grid-column: 3;
-    grid-row: 9;
-    display: grid;
-    place-content: center;
-  }
-
-  .item34 {
-    grid-column: 4;
-    grid-row: 9;
-  }
-
-  /* Dilatancy */
-  .item21 {
-    grid-column: 1;
-    grid-row: 12;
-  }
-
-  .dilatancy2 {
-    grid-column: 2;
-    grid-row: 12;
-  }
-
-  .dilatancy3 {
-    grid-column: 3;
-    grid-row: 12;
-  }
-
-  .item104 {
-    grid-column: 4;
-    grid-row: 12;
-    display: grid;
-    place-content: center;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(8, 100px);
-    grid-template-rows: repeat(11, 100px);
-    gap: 13px;
-    margin-top: 35px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
-  }
-
-  /* Hand */
-  .item1 {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    place-content: center;
-  }
-
-  .item2 {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .item3 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-  }
-
-  /* Hand */
-  .item4 {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
-  }
-
-  .item5 {
-    grid-row: 3;
-    grid-column: 3;
-  }
-
-  .item6 {
-    grid-column: 1;
-    grid-row: 5;
-    display: grid;
-    place-content: center;
-  }
-
-  /* Machine */
-  .item7 {
-    grid-column: 1 /span 2;
-    grid-row: 4;
-  }
-
-  .item8 {
-    grid-column: 2;
-    grid-row: 5;
-  }
-
-  .item9 {
-    grid-column: 3 / span 2;
-    grid-row: 4 / span 2;
-  }
-
-
-  /* Poster */
-  .item10 {
-    grid-column: 5 /span 3;
-    grid-row: 1 /span 2;
-  }
-
-  .item11 {
-    grid-column: 8;
-    grid-row: 1;
-    display: grid;
-    place-content: center;
-  }
-
-  .item12 {
-    grid-column: 7 /span 2;
-    grid-row: 3 /span 2;
-  }
-
-  .item102 {
-    grid-column: 5 /span 2;
-    grid-row: 3 /span 2;
-  }
-
-  .item103 {
-    grid-column: 8 /span 1;
-    grid-row: 2 /span 1;
-  }
-
-  .item105 {
-    grid-column: 8;
-    grid-row: 2;
-  }
-
-  /* Test tube */
-  .item22 {
-    grid-column: 6;
-    grid-row: 6;
-  }
-
-  .item23 {
-    grid-column: 5;
-    grid-row: 5;
-    display: grid;
-    place-content: center;
-  }
-
-  .item24 {
-    grid-column: 6;
-    grid-row: 5;
-  }
-
-  .item25 {
-    grid-column: 5 /span 2;
-    grid-row: 6 /span 2;
-  }
-
-  /* Records */
-  .item27 {
-    grid-column: 7;
-    grid-row: 7;
-    display: grid;
-    place-content: center;
-  }
-
-  .item28 {
-    grid-column: 8;
-    grid-row: 7;
-  }
-
-  .item30 {
-    grid-column: 7 / span 2;
-    grid-row: 5 / span 2;
-  }
-
-  /* Ice */
-  .item29 {
-    grid-column: 1;
-    grid-row: 8;
-  }
-
-  .item31 {
-    grid-column: 2 /span 2;
-    grid-row: 8 /span 2;
-  }
-
-  .item32 {
-    grid-column: 1;
-    grid-row: 9;
-    display: grid;
-    place-content: center;
-  }
-
-  .item35 {
-    grid-column: 4 /span 3;
-    grid-row: 8 /span 2;
-  }
+    background: var(--background-color);
+    transition: var(--secondary-color) .2s ease;
 
-  /* Satellite */
-  .item08 {
-    grid-column: 4;
-    grid-row: 7;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .item26 {
-    grid-column: 3;
-    grid-row: 6;
+  .post_article:hover .post_article_img{
+    /* もしエラー起きたら単に"background: var():..."でもいいかも */
+    background-color: var(--secondary-color); 
+    /* opacity: 1;
+    pointer-events: auto; */
   }
 
-  .item33 {
-    grid-column: 4;
-    grid-row: 6;
+  .post_article_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
   }
 
-  .item34 {
-    grid-column: 3;
-    grid-row: 7;
+  /* text on pictures */
+  .post_article_title {
+    position: absolute;
+    inset: 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    /* background: var(--secondary-color); */
+    color: var(--tertiary-color);
+    z-index: 2;
   }
 
-  /* Dilatancy */
-  .item21 {
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 2;
+  .post_article:hover .post_article_title{
+    opacity: 1;
+    pointer-events: auto;
   }
 
-  .dilatancy2 {
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 2;
+  .post_article_title_main {
+    margin: 0;
+    font-size: 1.0rem;
+    text-align: left;
   }
 
-  .dilatancy3 {
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 2;
+  .post_article_title_sub {  
+    font-size: 1.0rem;
+    opacity: 8;
+    text-align: left;
   }
 
-  .item104 {
-    grid-column: 2;
-    grid-row: 6;
+@media screen and (min-width: 300px) {
+  .bartext{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+  .post_container {
     display: grid;
-    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 1px;          /* 線の太さ */
+    background: var(--primary-color);  /* 線の色 */
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    margin-top: 10px;
+    margin-bottom: 100px;
   }
+
+  .post_list {
+    width: 45vw;
+    height: 45vw;
+    box-sizing: border-box;
+    /* border: 0.5px solid var(--primary-color); */
+
+    aspect-ratio: 1/1;
+    background: var(--background-color);
+  }
+
+  .post_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /*リンクの下線を消す*/
+    color: inherit; /*リンクの色を親と同じにする*/
+  }
+
+  .post_article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    display: flex;
+    font-size: 1.0rem;                      /*元々3.2rem*/
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text_year {
+    font-size: 1.5rem; 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--secondary-color);
+  }
+
+  .post_article_img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;  /*元々2.2, 4*/
+    box-sizing: border-box;
+
+    background: var(--background-color);
+    transition: var(--secondary-color) .2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post_article:hover .post_article_img{
+    /* もしエラー起きたら単に"background: var():..."でもいいかも */
+    background-color: var(--secondary-color); 
+    /* opacity: 1;
+    pointer-events: auto; */
+  }
+
+  .post_article_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  /* text on pictures */
+  .post_article_title {
+    position: absolute;
+    inset: 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    /* background: var(--secondary-color); */
+    color: var(--tertiary-color);
+    z-index: 2;
+  }
+
+  .post_article:hover .post_article_title{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .post_article_title_main {
+    margin: 0;
+    font-size: 1.0rem;
+    text-align: left;
+  }
+
+  .post_article_title_sub {  
+    font-size: 1.0rem;
+    opacity: 8;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .bartext{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+
+  }
+
+  .post_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 1px;          /* 線の太さ */
+    background: var(--primary-color);  /* 線の色 */
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .post_list {
+    width: 24vw;
+    height: 24vw;
+    box-sizing: border-box;
+    /* border: 0.5px solid var(--primary-color); */
+
+    aspect-ratio: 1/1;
+    background: var(--background-color);
+  }
+
+  .post_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /*リンクの下線を消す*/
+    color: inherit; /*リンクの色を親と同じにする*/
+  }
+
+  .post_article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    display: flex;
+    font-size: 3.2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* h3 */
+  .text_year {
+    font-size: 1.5rem; 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--secondary-color);
+  }
+
+  .post_article_img {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem 1.5rem;
+    box-sizing: border-box;
+
+    background: var(--background-color);
+    transition: var(--secondary-color) .2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post_article:hover .post_article_img{
+    /* もしエラー起きたら単に"background: var():..."でもいいかも */
+    background-color: var(--secondary-color); 
+    /* opacity: 1;
+    pointer-events: auto; */
+    
+  }
+
+  .post_article_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  /* text on pictures */
+  .post_article_title {
+    position: absolute;
+    inset: 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    /* background: var(--secondary-color); */
+    color: var(--tertiary-color);
+    z-index: 2;
+  }
+
+  .post_article:hover .post_article_title{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .post_article_title_main {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .post_article_title_sub {  
+    font-size: 1.2rem;
+    opacity: 8;
+    text-align: left;
+  }
+
+}
+
+@media screen and (min-width: 1300px){
+  .bartext{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 45px;
+
+  }
+
+  .post_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    gap: 1px;          /* 線の太さ */
+    background: var(--primary-color);  /* 線の色 */
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+
+  .post_list {
+    width: 25vw;
+    height: 25vw;
+    box-sizing: border-box;
+    /* border: 0.5px solid var(--primary-color); */
+
+    aspect-ratio: 1/1;
+    background: var(--background-color);
+  }
+
+  .post_link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /*リンクの下線を消す*/
+    color: inherit; /*リンクの色を親と同じにする*/
+  }
+
+  .post_article {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    display: flex;
+    font-size: 3.2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* h3 */
+  .text_year {
+    font-size: 1.5rem; 
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: var(--secondary-color);
+  }
+
+  .post_article_img {
+    width: 100%;
+    height: 100%;
+    padding: 2.2rem 4rem;
+    box-sizing: border-box;
+
+    background: var(--background-color);
+    transition: var(--secondary-color) .2s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .post_article:hover .post_article_img{
+    /* もしエラー起きたら単に"background: var():..."でもいいかも */
+    background-color: var(--secondary-color); 
+    /* opacity: 1;
+    pointer-events: auto; */
+    
+  }
+
+  .post_article_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  /* text on pictures */
+  .post_article_title {
+    position: absolute;
+    inset: 0;
+    padding: 1.2rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s ease;
+    /* background: var(--secondary-color); */
+    color: var(--tertiary-color);
+    z-index: 2;
+  }
+
+  .post_article:hover .post_article_title{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .post_article_title_main {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .post_article_title_sub {  
+    font-size: 1.2rem;
+    opacity: 8;
+    text-align: left;
+  }
+
 }

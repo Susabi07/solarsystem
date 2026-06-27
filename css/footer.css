@@ -14,13 +14,112 @@ footer {
   align-items: center;
 }
 
+.footer_sns {
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  padding: 0;
+}
+
+/* Dice icon */
 .themeIcon {
   fill: var(--primary-color);
   cursor: pointer;
 }
 
+.snsIcon {
+  display: block;
+  fill: var(--primary-color);
+  cursor: pointer;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.snsIcon svg:hover {
+  fill: var(--primary-color-hover);
+}
+
+/*応急処置 Quick fix：mixcloud logo hight adjustment. Lower the y-axis by 2pt.*/
+.mixcloudIcon-height-y svg {
+  position: relative;
+  top: 0.5px;
+}
+
+.footer_lang {
+  fill: var(--primary-color);
+  cursor: pointer;
+  /* margin-left: 1rem; */
+  /* width: 1.5rem; */
+  align-items: center;
+  font-size: 15px;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.bar_jpeng {
+  font-size: 15px;
+  padding: 0.2rem;
+}
+
+.lang_section {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 400px) {
+  footer {
+    font-size: 15px;
+    /* flex-direction: row; */
+  }
+  
+  /* .footer_right {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  .footer_sns {
+    /* flex-direction: row; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .footer_lang {
+    font-size: 15px;
+  }
+  .bar_jpeng {
+    font-size: 15px;
+  }
+
+}
+
 @media screen and (min-width: 600px) {
   footer {
     flex-direction: row;
+    font-size: 18px;
   }
+
+  .footer_sns {
+    /* flex-direction: row; */
+    align-items: center;
+    padding: 0;
+    margin: 10px;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .footer_lang {
+    font-size: 18px;
+  }
+  .bar_jpeng {
+    font-size: 18px;
+  }
+
 }

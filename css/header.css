@@ -38,15 +38,13 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  /* margin-top: 15px;
+  margin-bottom: 15px; */
   white-space: nowrap;
 }
 
@@ -58,6 +56,11 @@ nav ul {
   height: 100px;
   align-items: center;
   display: none;
+}
+
+.themeIcon {
+  fill: var(--primary-color);
+  cursor: pointer;
 }
 
 /*Mamburger Menu Header*/
@@ -124,6 +127,6 @@ nav ul {
     margin-bottom: 0;
   }
   nav ul {
-    gap: 50px;
+    gap: 80px;
   }
 }
